@@ -1,0 +1,98 @@
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .logo {
+        width: 45%
+    }
+
+    .hamburger {
+        display: block;
+        top: 0;
+        position: fixed;
+        right: 0;
+        margin: 10px;
+        margin-right: 12px;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header.active {
+        transition: height 0.5s;
+        height: 208px;
+        width: auto;
+    }
+
+    ul.active {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    li {
+        padding-top: 8px;
+    }
+
+    .nav-branding.active {
+        display: none;
+        transition: display 0.4s;
+    }
+
+    .row-reverse {
+        flex-direction: row;
+    }
+
+    #img-mobile {
+        height: 330px;
+        padding-left: 20%;
+        padding-bottom: 5%;
+    }
+
+    #hero-content {
+        justify-self: center;
+        padding-inline: 10px;
+    }
+
+    .flex-align-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .margin-side-30px {
+        margin-inline: 20px;
+    }
+    .bg-yellow{
+        background: rgb(226,252,0);
+        background: linear-gradient(22deg, rgba(226,252,0,1) 28%, rgba(255,193,7,1) 59%);
+        height: 35vh;
+    }
+    .review-card{
+        background-color:white;
+        height: 350px;
+        width: 250px;
+        border-radius: 15px;
+    }
+   #pvimg1{
+       
+        height: 100%;
+        width: 100%;
+    }
+    .cursive{
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (min-width: 769px){
+    .footer{
+        position: relative;
+        bottom: 0;
+    }
+}

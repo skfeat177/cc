@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8Z8YVWX9ZJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-8Z8YVWX9ZJ');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="An exceptional institute for preparation of engineering/ medical exam (JEE/NEET) in very young age (pre-foundation)">
+    <meta name="keywords"
+        content="credible classes, credibleclasses, credible classes patna, credible classes Kankarbhag,credible classes Gandhi nagar,coaching center nearme,coaching for 6th class,coaching for 7th class,coaching for 8th class,coaching for NEET preparation patna,coaching 10th class,coaching centres bhoothnath">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="https://i.ibb.co/B3Wd2Wd/IMG-20230807-WA0020.jpg" type="image/x-icon">
+
+    <title>Credible Classes</title>
+</head>
+
+<body>
+
+    <script>
+        function toggleBootstrapClasses() {
+        const navbar = document.getElementById('scrollNavbar');
+        const logo = document.querySelector('.navbar-brand img');
+        const loginButton = document.querySelector('#loginStatus button');
+        const navLinks = document.querySelectorAll('#navbarSupportedContent .nav-item a');
+        const dynamicThemeColorMeta = document.getElementById('dynamic-theme-color');
+
+        if (window.scrollY > 0) {
+            navbar.classList.add('bg-warning', 'position-fixed','w-100','top-0','z-index-n2');
+        logo.style.height = '37px';
+        logo.style.width = '150px';
+        loginButton.classList.remove('btn-outline-warning');
+        loginButton.classList.add('btn-outline-dark');
+
+            navLinks.forEach(link => {
+            link.classList.add('underline-animation-scroll');
+        link.classList.remove('underline-animation');
+            });
+
+        // Change theme color to warning color on scroll
+        dynamicThemeColorMeta.setAttribute('content', '#FFC107');
+        } else {
+            navbar.classList.remove('bg-warning', 'position-fixed', 'w-100');
+        logo.style.height = '50px';
+        logo.style.width = '180px';
+        loginButton.classList.add('btn-outline-warning');
+        loginButton.classList.remove('btn-outline-dark');
+
+            navLinks.forEach(link => {
+            link.classList.remove('underline-animation-scroll');
+        link.classList.add('underline-animation');
+            });
+
+        // Change theme color to white when not scrolling
+        dynamicThemeColorMeta.setAttribute('content', '#FFFFFF');
+        }
+    }
+
+        window.addEventListener('scroll', toggleBootstrapClasses);
+    </script>
+
+
+    <style>
+        /* Default styles for the navigation bar */
+        #scrollNavbar {
+            transition: background-color 0.5s, position 0.5s, width 0.5s;
+            z-index: 2;
+        }
+
+        /* Logo transition on scroll */
+        .navbar-brand img {
+            transition: height 0.5s, width 0.5s;
+        }
+    </style>
+    <nav id="scrollNavbar" class="navbar navbar-expand-lg d-flex justify-content-between mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i.ibb.co/3rdb8Bm/Picsart-23-08-24-21-26-47-462.png" alt="Credeible-2-1"
+                    alt="Credeible-1" alt="Logo" width="180" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-md-2" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="underline-animation-scroll alink bold" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="underline-animation alink bold" aria-current="page" href="course.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="underline-animation alink bold" aria-current="page" href="notice.html">Notice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="underline-animation alink bold" aria-current="page" href="about.html">About</a>
+                    </li>
+
+                </ul>
+                <div class="d-flex">
+
+                    <div id="loginStatus">
+                        <button type="button" class="btn btn-outline-warning me-3 ms-3  custom-border"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-key"></i>
+                            Student Log in</button>
+                    </div>
+                    <a id="adminbutton" class=" d-none d-md-block none"></a>
+                </div>
+
+            </div>
+            <script>function clearLocalStorage() {
+            localStorage.clear();
+        location.href="index.html"
+                }
+            </script>
+        </div>
+        </div>
+    </nav>
+    <!-- Modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Student Log in</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div id="loginresponse">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Username</label>
+                            <input type="text" class="form-control" value="" id="username"
+                                placeholder="Enter Your Roll Number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Password</label>
+
+                            <input type="text" class="form-control" value="" id="password"
+                                placeholder="Enter Your Password">
+                        </div>
+
+                    </div>
+                    <p class="text-danger text-sm-start" id="erroOnIncomplete"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger custom-border2" data-bs-dismiss="modal"> Cancel</button>
+                    <button id="loginButton" class="btn btn-warning custom-border2"> Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center bold bottom-border">Your Attendance</h2>
+    </div>
+
+    <div class="container mt-3 mb-5">
+        <div class="table-responsive mt-3">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Attendance Status</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTableBody">
+                    <!-- This tbody will be populated dynamically with JavaScript -->
+                </tbody>
+            </table>
+            <div class="spinner-container" id="spinner">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+const token = localStorage.getItem('token');
+
+// Fetch the student roll from the API using the token
+async function fetchStudentRoll() {
+    try {
+        const response = await fetch('https://server-as2k.onrender.com/verify', {
+            method: 'GET',
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
+        });
+
+        const data = await response.json();
+        return data.roll;
+    } catch (error) {
+        console.error('Error fetching student roll:', error);
+        throw error;
+    }
+}
+
+document.addEventListener("DOMContentLoaded", async function () {
+    const studentroll = await fetchStudentRoll();
+    try {
+        const response = await fetch(`https://server-as2k.onrender.com/getattendance/${studentroll}`);
+        const data = await response.json();
+
+        const studentTableBody = document.getElementById('studentTableBody');
+        const loadingSpinner = document.getElementById('loadingSpinner');
+
+        // Clear any existing content in the table body
+        studentTableBody.innerHTML = '';
+
+        // Loop through the data array in reverse order
+        for (let i = data.length - 1; i >= 0; i--) {
+            const item = data[i];
+            const row = document.createElement('tr');
+
+            const dateCell = document.createElement('td');
+            dateCell.textContent = item.Date;
+            dateCell.classList.add('bold'); // Apply "bold" class
+            row.appendChild(dateCell);
+
+            const statusCell = document.createElement('td');
+            statusCell.textContent = item.attendanceStatus;
+            
+            // Apply CSS class based on attendanceStatus
+            if (item.attendanceStatus === 'Present') {
+                statusCell.classList.add('text-success', 'bold'); // Apply green color and "bold" class
+            } else if (item.attendanceStatus === 'Absent') {
+                statusCell.classList.add('text-danger', 'bold'); // Apply red color and "bold" class
+            }
+             else if (item.attendanceStatus === 'Late') {
+                statusCell.classList.add('text-warning', 'bold'); // Apply red color and "bold" class
+            }
+            
+            row.appendChild(statusCell);
+
+            studentTableBody.appendChild(row);
+        }
+
+        // Hide the loading spinner after data is loaded
+        loadingSpinner.style.display = 'none';
+    } catch (error) {
+        console.error('Error fetching attendance data:', error);
+    }
+});
+
+
+
+
+
+
+</script>
+
+    <script src="scripts/admin.js"></script>
+    <script src="scripts/loginapi.js">
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/index.js">
+    </script>
+    <script src="https://kit.fontawesome.com/0a54405ea9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="scripts/Login.js"></script>
+</body>
+
+</html>

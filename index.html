@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8Z8YVWX9ZJ" 5</script>
+
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-8Z8YVWX9ZJ');
+
+    </script>
+    <script>
+            function toggleBootstrapClasses() {
+        const navbar = document.getElementById('scrollNavbar');
+            const logo = document.querySelector('.navbar-brand img');
+            const loginButton = document.querySelector('#loginStatus button');
+            const navLinks = document.querySelectorAll('#navbarSupportedContent .nav-item a');
+            const dynamicThemeColorMeta = document.getElementById('dynamic-theme-color');
+
+        if (window.scrollY > 0) {
+                navbar.classList.add('bg-warning', 'position-fixed', 'w-100');
+            logo.style.height = '37px';
+            logo.style.width = '150px';
+            loginButton.classList.remove('btn-outline-warning');
+            loginButton.classList.add('btn-outline-dark');
+
+            navLinks.forEach(link => {
+                link.classList.add('underline-animation-scroll');
+            link.classList.remove('underline-animation');
+            });
+
+            // Change theme color to warning color on scroll
+            dynamicThemeColorMeta.setAttribute('content', '#FFC107');
+        } else {
+                navbar.classList.remove('bg-warning', 'position-fixed', 'w-100');
+            logo.style.height = '50px';
+            logo.style.width = '180px';
+            loginButton.classList.add('btn-outline-warning');
+            loginButton.classList.remove('btn-outline-dark');
+
+            navLinks.forEach(link => {
+                link.classList.remove('underline-animation-scroll');
+            link.classList.add('underline-animation');
+            });
+
+            // Change theme color to white when not scrolling
+            dynamicThemeColorMeta.setAttribute('content', '#FFFFFF');
+        }
+    }
+
+            window.addEventListener('scroll', toggleBootstrapClasses);
+    </script>
+
+
+    <style>
+        /* Default styles for the navigation bar */
+        #scrollNavbar {
+            transition: background-color 0.5s, position 0.5s, width 0.5s;
+        }
+
+        /* Logo transition on scroll */
+        .navbar-brand img {
+            transition: height 0.5s, width 0.5s;
+        }
+    </style>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="An exceptional institute for preparation of engineering/ medical exam (JEE/NEET) in very young age (pre-foundation)">
+    <meta name="keywords"
+        content="credible classes, credibleclasses, credible classes patna, credible classes Kankarbhag,credible classes Gandhi nagar,coaching center nearme,coaching for 6th class,coaching for 7th class,coaching for 8th class,coaching for NEET preparation patna,coaching 10th class,coaching centres bhoothnath">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="https://i.ibb.co/B3Wd2Wd/IMG-20230807-WA0020.jpg" type="image/x-icon">
+
+    <title>Credible Classes</title>
+</head>
+
+<body>
+    <nav id="scrollNavbar" class="navbar navbar-expand-lg d-flex justify-content-between mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i.ibb.co/3rdb8Bm/Picsart-23-08-24-21-26-47-462.png" alt="Credeible-2-1"
+                    alt="Credeible-1" alt="Logo" width="180" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-md-2" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="underline-animation-scroll alink bold" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="underline-animation alink bold" aria-current="page" href="course.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="underline-animation alink bold" aria-current="page" href="notice.html">Notice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="underline-animation alink bold" aria-current="page" href="about.html">About</a>
+                    </li>
+
+                </ul>
+                <div class="d-flex">
+
+                    <div id="loginStatus">
+                        <button type="button" class="btn btn-outline-warning me-3 ms-3  custom-border"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-key"></i>
+                            Student Log in</button>
+                    </div>
+                    <a id="adminbutton" class=" d-none d-md-block none"></a>
+                </div>
+
+            </div>
+            <script>function clearLocalStorage() {
+                localStorage.clear();
+            location.href="index.html"
+                }
+            </script>
+        </div>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Student Log in</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div id="loginresponse">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Username</label>
+                            <input type="number" class="form-control" value="" id="username"
+                                placeholder="Enter Your Roll Number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Password</label>
+
+                            <input type="text" class="form-control" value="" id="password"
+                                placeholder="Enter Your Password">
+                        </div>
+
+                    </div>
+                    <p class="text-danger text-sm-start" id="erroOnIncomplete"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger custom-border2" data-bs-dismiss="modal"> Cancel</button>
+                    <button id="loginButton" class="btn btn-warning custom-border2"> Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <!-- Image div -->
+            <div class="col-md-6 flex-align order-md-2">
+                <img src="https://i.ibb.co/ZLXCJxz/Whats-App-Image-2023-08-08-at-00-09-05.jpg" alt=""
+                    class="img-fluid ">
+            </div>
+
+            <!-- Content div -->
+            <div class="col-md-6 order-md-1" id="hero-content">
+                <h1 class="bold ">We Make you the Best Version of Yourself</h1>
+                <p class="description ">An exceptional institute for preparation of engineering/ medical exam (JEE/NEET)
+                    in very young age (pre-foundation)</p>
+                <div class="flex-align-mobile"> <button type="button"
+                        onclick="window.location.href='tel:+91 6299266758'"
+                        class="btn btn-warning custom-border btn-lg "><i class="fa-solid fa-phone"></i>
+                        Contact Us Now</button></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="flex-align mt-4">
+            <h2 class="text-center bold bottom-border ">Our Courses</h2>
+        </div>
+        <div class="row">
+            <style>
+                .batchimg {
+                    border-radius: 10px;
+                }
+
+                .batchimg:hover {
+                    border: 5px solid #FFC107;
+                    padding: 5px;
+                    transition: 0.3s ease-in-out;
+                }
+            </style>
+            <div class="col-md-4 flex-align" style="margin-bottom: -40px !important;">
+                <img src="https://i.ibb.co/7b7Q2py/ACHIEVERS.jpg" class="img-fluid rounded shadow-lg batchimg "
+                    style="width:80%; height:80%; cursor:pointer;" onclick="window.location.href='course.html'">
+            </div>
+            <div class="col-md-4 flex-align" style="margin-bottom: -40px !important;">
+                <img src="https://i.ibb.co/0mr8HC5/ALPBHA.jpg" class="img-fluid rounded shadow-lg batchimg "
+                    style="width:80%; height:80%; cursor:pointer;" onclick="window.location.href='course.html'">
+            </div>
+            <div class="col-md-4 flex-align" style="margin-bottom: -40px !important;">
+                <img src="https://i.ibb.co/3Ccm5NB/EXTRA.jpg" class="img-fluid rounded shadow-lg batchimg "
+                    style="width:80%; height:80%; cursor:pointer;" onclick="window.location.href='course.html'">
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="mt-5  container-fluid bg-yellow">
+        <h1 class="bold pt-4 text-center ">What People Say</h1>
+        <h5 class="text-center bold description  text-white">Reviews of the Students</h5>
+
+        <div class="row mt-5 flex-nowrap sc " id="scroll-container">
+            <div class="col-md-3 review-card ms-3">
+                <div class="profile row mt-2">
+                    <div class="col-2"><img
+                            src="https://lh3.googleusercontent.com/a-/AD_cMMQ1FTNT-pGtuHrsDDSx-APh1xfUdydRocrLgZX_0hMeS50=w45-h45-p-rp-mo-br100"
+                            id="rounded" alt="">
+                    </div>
+
+                    <div class="col-8 ms-3 mt-1 ">
+                        <p class="bold ">Ritikesh Kumar</p>
+                        <p class="description text-sm">23rd September 2022</p>
+                    </div>
+                </div>
+                <div style="text-overflow: ellipsis;">
+                    <h6 class="bold text-primary">"Well Designed Curriculum "</h6>
+                    <p class="mx-1">They have well-designed curriculum that covers all the essential topics and concepts
+                        in a structured manner. The study materials provided by them are comprehensive and of high
+                        quality, which helps students to understand difficult concepts easily.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 review-card ms-3">
+                <div class="profile row mt-2">
+                    <div class="col-2"><img
+                            src="https://lh3.googleusercontent.com/a-/AD_cMMTIqtVXjrcxOcWGyUQYaDLD_U1w-SK0JppXUJ1zPivPJRo=w45-h45-p-rp-mo-br100 "
+                            id="rounded" alt="">
+                    </div>
+
+                    <div class="col-8 ms-3 mt-1 ">
+                        <p class="bold ">Piyush Singh</p>
+                        <p class="description text-sm">16th May 2023</p>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="bold text-primary">"Sense of humor"</h6>
+                    <p class="mx-1" style="text-overflow: ellipsis;">My gratitude to you for all you have done, which I
+                        will never forget. I truly appreciate you and your time you spent helping me in many occasions.
+                        I enjoyed every minute of your lecture as well as your marvelous sense of humor. Thank you CC 👌
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 review-card ms-3">
+                <div class="profile row mt-2">
+                    <div class="col-2"><img
+                            src="https://lh3.googleusercontent.com/a-/AD_cMMR9ZmVwI5vGHbhbMwMADxQRTeQbtfs9-xdDT777gAjRbn0=w45-h45-p-rp-mo-br100 "
+                            id="rounded" alt="">
+                    </div>
+
+                    <div class="col-8 ms-3 mt-1 ">
+                        <p class="bold ">Trishla
+                        </p>
+                        <p class="description text-sm">3rd August 2023</p>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="bold text-primary">"Great Study Environment"</h6>
+                    <p class="mx-1">Here I experienced a great environment of study with a great magician type of
+                        teachers <strong>Mr. Rupesh Shrivastava</strong> Here i observe a treasure of knowledge....I'm
+                        very thankful for RUPESH sir to made me a good person with a good ability... 💛
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 review-card ms-3">
+                <div class="profile row mt-2">
+                    <div class="col-2"><img src="https://lh3.googleusercontent.com/a-/AD_cMMSDgvbi8gmuKgYvoct7WfUJ8xgmTcTwyQVZf5BfEgJDVQ=w45-h45-p-rp-mo-br100
+                        " id="rounded" alt="">
+                    </div>
+
+                    <div class="col-8 ms-3 mt-1 ">
+                        <p class="bold ">Pragya kumari</p>
+                        <p class="description text-sm">19th July 2023</p>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="bold text-primary">"Got my motivation here"</h6>
+                    <p class="mx-1" style="text-overflow: ellipsis;">Nice education system ,if you want to do NEET go
+                        should do the advance classes here all the 99 chapters will be thought no matter which class I
+                        got my motivation here and my goal too
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 review-card ms-3">
+                <div class="profile row mt-2">
+                    <div class="col-2"><img
+                            src="https://lh3.googleusercontent.com/a/AAcHTtdqqsoMSEWvnbPMNIxOTddGeQI3ULEqH6F4VWjq7bNo=w45-h45-p-rp-mo-br100"
+                            id="rounded" alt="">
+                    </div>
+
+                    <div class="col-8 ms-3 mt-1 ">
+                        <p class="bold ">Sanskriti Singh</p>
+                        <p class="description text-sm">20th September 2020</p>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="bold text-primary">"Everyone's doubts resolved"</h6>
+                    <p class="mx-1">It's a wonderful place for the preparation of NEET . Here one thing best that I have
+                        observed that teachers are always ready for to solve the problem of every student </p>
+                </div>
+            </div>
+            <div class="col-md-3 review-card ms-3">
+                <div class="profile row mt-2">
+                    <div class="col-2"><img
+                            src="https://lh3.googleusercontent.com/a/AAcHTteo91gc7VL_-46bL6PAMX5-j1e_ySyObfExi_wAKs-K=w45-h45-p-rp-mo-br100 "
+                            id="rounded" alt="">
+                    </div>
+
+                    <div class="col-8 ms-3 mt-1 ">
+                        <p class="bold ">Shreyas Raj
+                        </p>
+                        <p class="description text-sm">7th January 2023</p>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="bold text-primary">"Discipline maintained."</h6>
+                    <p class="mx-1">This is amazing coaching centre. Discipline is maintained.
+
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 review-card ms-3">
+                <div class="profile row mt-2">
+                    <div class="col-2"><img src="https://lh3.googleusercontent.com/a-/AD_cMMSzLOJk63hh4RnV-VotIo60q8BL8M8i2ebquOdkVeshvQ=w45-h45-p-rp-mo-br100
+                        " id="rounded" alt="">
+                    </div>
+
+                    <div class="col-8 ms-3 mt-1 ">
+                        <p class="bold ">Ansh Jha
+                        </p>
+                        <p class="description text-sm">19th June 2021</p>
+                    </div>
+                </div>
+                <div>
+                    <h6 class="bold text-primary">"Great behaviour"</h6>
+                    <p class="mx-1">Best coaching centre in Patna Excellent teacher Great behaviour Great environment
+                        for study
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 mb-5" id="section2">
+        <h2 class="bold text-center mb-5 ">Our Institution Address and Contact Info</h2>
+        <div class="row">
+            <div class="col-md-6 flex-align slide-20 "><iframe class="custom-border"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57572.261592515184!2d85.1010578216797!3d25.59606419999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed597d0a0d4f99%3A0x4c22f82334655914!2sCredible%20Classes!5e0!3m2!1sen!2sin!4v1691152989345!5m2!1sen!2sin"
+                    width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="col-md-6 column pt-md-5">
+                <h4 class="bold text-primary-emphasis text-start mt-5  text-c">2M/88, near Chandrasekhar
+                    Park, Bahadurpur
+                    Housing Colony, Mahatma Gandhi Nagar, Chitragupta Nagar, Patna, Bihar 800026</h4>
+                <h5 class="bold text-primary-emphasis text text-start  text-c">Contact: <span class="text-success">+91
+                        6299266758</span></h5>
+                <h5 class="bold text-primary-emphasis text text-start  text-c">Hours : <span class="text-primary">3:30
+                        P.M to 7:30 P.M</span> </h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid footer text-center flex-align">
+        <div>&copy Credible Classes 2023</div>
+    </div>
+
+
+    <script src="scripts/admin.js"></script>
+    <script src="scripts/loginapi.js">
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/index.js">
+    </script>
+    <script src="https://kit.fontawesome.com/0a54405ea9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="scripts/Login.js"></script>
+</body>
+
+</html>

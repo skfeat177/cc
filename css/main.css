@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=REM:wght@400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'REM', sans-serif;
+}
+/* Reusable Classes with Values */
+:root {
+    --gold: #FBC403;
+    --yellow: #FFDD03;
+    --black: #0A0A0A;
+    --light-black: #151515;
+    --grey-text: rgb(123, 123, 123);
+    --warning:#FFC107;;
+}
+.margin-side {
+    margin-inline: 90px;
+}
+.margin-side-30px {
+    margin-inline: 80px;
+}
+.margin-block{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.padding-side {
+    padding-inline: 20px;
+}
+.padding-block {
+    padding-block: 30px;
+}
+.flex {
+    display: flex;
+}
+.flex-justify{
+    display: flex;
+    justify-content: center;
+
+}
+.flex-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+} */
+
+.underline-animation {
+    position: relative;
+    display: inline;
+    cursor: pointer;
+}
+.underline-animation::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: var(--yellow);
+    transition: width 0.3s ease-in-out; 
+    margin-bottom: -5px; 
+}
+.underline-animation:hover::before {
+    width: 100%;
+
+}
+.underline-animation-scroll {
+    position: relative;
+    display: inline;
+    cursor: pointer;
+}
+.underline-animation-scroll::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: white;
+    transition: width 0.3s ease-in-out; 
+    margin-bottom: -5px; 
+}
+.underline-animation-scroll:hover::before {
+    width: 100%;
+
+}
+
+.alink{
+    text-decoration: none;
+    color: #0A0A0A;
+}
+
+.custom-border {
+    border-radius: 20px;
+    padding-block: 5px;
+    padding-inline: 10px;
+}
+.bold{
+    font-weight: bold;
+}
+.active{
+    color:grey;
+    cursor: not-allowed;
+}
+.hero-height{
+    height: 70vh;
+}
+.paragraph {
+  width: 80%; 
+  }
+
+.slide-up{
+    animation: slide 2s ease;
+}
+@keyframes slide {
+    from{
+transform: translateY(300px);
+opacity: 0.2;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.slide-20{
+    animation: slide-20 2s ease;
+}
+@keyframes slide-20 {
+    from{
+transform: translateY(100px);
+opacity: 0.2;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.column{
+    flex-direction: column;
+}
+.custom-border2{
+    border-radius: 20px;
+}
+
+.none{
+    display:none;
+}
+.block{
+    display:block;
+}
+
+body {
+    min-height: 100vh; /* This ensures the container fills the entire viewport height */
+}
+
+.bottom-border-small {
+    border-bottom: 2px solid var(--gold);
+    display: inline-block;
+    padding-inline: 20px;
+    padding-bottom: 5px;
+
+}
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    
+}
+.spinner-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+/* Custom CSS for rounded table borders */
+.table-rounded {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.profile-pic {
+    width: 100%;  
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important; 
+    margin-top: 10px;
+    
+}
+
+.profile-pic img {
+    width: 200px;
+    height: 200px; 
+    object-fit: contain; /* Maintain image aspect ratio while covering the container */
+    border-radius: 50%; /* Makes it circular */
+    border: 4px solid #FFC107;
+}
+.cardx {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 100%;
+
+  }
+  
+  .cardx-body {
+    padding: 20px;
+  }
+  
+  .single-chart {
+    width: 100%;
+    justify-content: space-around ;
+  }
+  
+  .circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    max-height: 300px;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 4s ease-out forwards;
+  }
+  
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  
+  .circular-chart.orange .circle {
+    stroke: #ff9f00;
+  }
+   
+  .percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+  }

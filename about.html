@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8Z8YVWX9ZJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8Z8YVWX9ZJ');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="https://i.ibb.co/B3Wd2Wd/IMG-20230807-WA0020.jpg" type="image/x-icon">
+
+    <title>About - Credible Classes</title>
+
+    <script>
+        function toggleBootstrapClasses() {
+        const navbar = document.getElementById('scrollNavbar');
+        const logo = document.querySelector('.navbar-brand img');
+        const loginButton = document.querySelector('#loginStatus button');
+        const navLinks = document.querySelectorAll('#navbarSupportedContent .nav-item a');
+        const dynamicThemeColorMeta = document.getElementById('dynamic-theme-color');
+
+        if (window.scrollY > 0) {
+            navbar.classList.add('bg-warning', 'position-fixed', 'w-100','top-0','z-index-n2');
+        logo.style.height = '37px';
+        logo.style.width = '150px';
+        loginButton.classList.remove('btn-outline-warning');
+        loginButton.classList.add('btn-outline-dark');
+
+            navLinks.forEach(link => {
+            link.classList.add('underline-animation-scroll');
+        link.classList.remove('underline-animation');
+            });
+
+        // Change theme color to warning color on scroll
+        dynamicThemeColorMeta.setAttribute('content', '#FFC107');
+        } else {
+            navbar.classList.remove('bg-warning', 'position-fixed', 'w-100');
+        logo.style.height = '50px';
+        logo.style.width = '180px';
+        loginButton.classList.add('btn-outline-warning');
+        loginButton.classList.remove('btn-outline-dark');
+
+            navLinks.forEach(link => {
+            link.classList.remove('underline-animation-scroll');
+        link.classList.add('underline-animation');
+            });
+
+        // Change theme color to white when not scrolling
+        dynamicThemeColorMeta.setAttribute('content', '#FFFFFF');
+        }
+    }
+
+        window.addEventListener('scroll', toggleBootstrapClasses);
+    </script>
+
+
+    <style>
+        /* Default styles for the navigation bar */
+        #scrollNavbar {
+            transition: background-color 0.5s, position 0.5s, width 0.5s;
+            z-index: 2;
+        }
+
+        /* Logo transition on scroll */
+        .navbar-brand img {
+            transition: height 0.5s, width 0.5s;
+        }
+    </style>
+
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+    .cursive {
+        font-family: 'Arvo', serif;
+    }
+
+    @media screen and (max-width: 768px) {
+        #pvimg1 {
+            margin-left: 5px;
+            margin-top: 10px;
+            box-shadow: 1px 1px 5px black;
+        }
+
+        .listmargin {
+            margin-left: -35px;
+        }
+        .centertxt{
+            text-align: center;
+        }
+    }
+
+    .pvimg1 {
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+    }
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const images = [
+            "https://i.ibb.co/jrzCpbq/IMG-20230807-WA0001.jpg",
+            "https://i.ibb.co/cg6NCxm/IMG-20230807-WA0002.jpg",
+            "https://i.ibb.co/1QMtBq6/IMG-20230807-WA0000.jpg"
+        ];
+        let currentIndex = 0;
+
+        function showImage(index) {
+            const imageContainer = document.getElementById("pvimg1");
+            fadeOut(imageContainer, 500, function () {
+                imageContainer.src = images[index];
+                fadeIn(imageContainer, 500);
+            });
+            currentIndex = index;
+        }
+
+        function fadeOut(element, duration, callback) {
+            element.style.transition = `opacity ${duration}ms`;
+            element.style.opacity = 0;
+            setTimeout(callback, duration);
+        }
+
+        function fadeIn(element, duration) {
+            element.style.transition = `opacity ${duration}ms`;
+            element.style.opacity = 1;
+        }
+
+        setInterval(function () {
+            const nextIndex = (currentIndex + 1) % images.length;
+            showImage(nextIndex);
+        }, 3000); // Change image every 3 seconds
+    });
+</script>
+
+<body>
+
+
+    <div id="alert-container" class="position-absolute w-100 text-center" style="top: 0;"></div>
+
+    <nav id="scrollNavbar" class="navbar navbar-expand-lg d-flex justify-content-between mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i.ibb.co/3rdb8Bm/Picsart-23-08-24-21-26-47-462.png" alt="Credeible-2-1"
+                    alt="Credeible-1" alt="Logo" width="180" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-md-2" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <a class="underline-animation-scroll alink bold" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="underline-animation alink bold" aria-current="page" href="course.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="underline-animation alink bold" aria-current="page" href="notice.html">Notice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="underline-animation alink bold" aria-current="page" href="about.html">About</a>
+                    </li>
+
+                </ul>
+                <div class="d-flex">
+
+                    <div id="loginStatus">
+                        <button type="button" class="btn btn-outline-warning me-3 ms-3  custom-border"
+                            data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa-solid fa-key"></i>
+                            Student Log in</button>
+                    </div>
+                    <a id="adminbutton" class=" d-none d-md-block none"></a>
+                </div>
+
+            </div>
+            <script>function clearLocalStorage() {
+            localStorage.clear();
+        location.href="index.html"
+                }
+            </script>
+        </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Student Log in</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div id="loginresponse">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Username</label>
+                            <input type="text" class="form-control" value="" id="username"
+                                placeholder="Enter Your Roll Number">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Password</label>
+
+                            <input type="number" class="form-control" value="" id="password"
+                                placeholder="Enter Your Password">
+                        </div>
+
+                    </div>
+                    <p class="text-danger text-sm-start" id="erroOnIncomplete"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger custom-border2" data-bs-dismiss="modal"> Cancel</button>
+                    <button id="loginButton" class="btn btn-warning custom-border2"> Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered my-custom-modal" id="modelbox">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Admin Log in</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="conatiner">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Username</label>
+                            <input type="text" class="form-control" value="" id="admin_username"
+                                placeholder="Enter Provided Username">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Password</label>
+                            <input type="password" class="form-control" value="" id="admin_password"
+                                placeholder="Enter Provided Password">
+                        </div>
+                        <div class="mb-1">
+                            <style>
+                                /* Increase the size of the checkbox */
+                                .larger-checkbox {
+                                    transform: scale(1.5);
+                                    /* Adjust the scale factor as needed */
+                                    margin-right: 8px;
+                                    /* Add some spacing between the checkbox and label */
+                                }
+                            </style>
+                            <input type="checkbox" id="toggleCheckbox" class="larger-checkbox" onclick="toggleAction()">
+                            <label for="toggleCheckbox" class="form-label  ms-1">Autofill Details</label>
+                        </div>
+                    </div>
+                    <p class="text-danger text-sm-start" id="adminErroOnIncomplete"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger custom-border2" data-bs-dismiss="modal"> Cancel</button>
+
+
+                    <button type="button" class="btn btn-warning custom-border2" id="admin_login"
+                        onclick="adminlogin()"> Log in & Continue to Dashboard</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- new adahsjhasdhasufdhajsfhajkslhfcjksd  -->
+
+    <div class="container mt-5 mb-3 flex-justify ">
+        <h1 class="text-center bold bottom-border  ">About Credible Classes</h1>
+    </div>
+    <div class="container mb-3">
+        <h2 class="text-center bold bottom-border  ">Introduction</h2>
+    </div>
+    <div class="container">
+        <div class="row flex-align  container">
+            <div class="col-md-6">
+                <h5 class="cursive bold">Credible Classes, established in 2020, is not just an institute but also plays
+                    a pivotal role in instilling confidence and building strong fundamentals in students. It stands as
+                    one of the leading institutes in Kankarbhag (Patna) for pre-foundation batches.<br><br>
+
+                    At Credible Classes, tests are meticulously designed to assess the temperament and potential of
+                    students in the fields of medical and engineering. We offer an exceptional system for preparing
+                    students for Medical/Engineering exams (NEET/JEE) even during their earlier academic years.<br><br>
+
+                    Our institute provides an optimal environment and the necessary resources to ensure that students
+                    are well-prepared to excel in competitive exams. Our goal is to secure the selection of students in
+                    these highly competitive exams by providing the appropriate level of guidance and support.</h5>
+            </div>
+            <div class="col-md-6 ">
+                <img class="d-inline-block pvimg1 img-fluid mb-2" src="https://i.ibb.co/1QMtBq6/IMG-20230807-WA0000.jpg"
+                    id="pvimg1"><br>
+            </div>
+        </div>
+
+    </div>
+    <div class="container mt-5">
+        <div class="mb-3">
+            <h2 class="text-center bold bottom-border  mb-3">Features</h2>
+            <ul style="list-style: disc;" class="listmargin">
+                <li>
+                    <h5 class="cursive bold  pb-2 pt-3">&#10148; Monthly academic test series (ATS) and
+                        competitive test series (CTS) to analyze progress of students.</h5>
+                </li>
+                <li>
+                    <h5 class="cursive bold  pb-2">&#10148; Air-conditioned classroom.</h5>
+                </li>
+                <li>
+                    <h5 class="cursive bold  pb-2">&#10148; Access to high quality R.O drinking water.
+                    </h5>
+                </li>
+                <li>
+                    <h5 class="cursive bold  pb-2">&#10148; CCTV camera for high security</h5>
+                </li>
+                <li>
+                    <h5 class="cursive bold  pb-2">&#10148; Easy access to notes and results by students
+                        and parents.</h5>
+                </li>
+                <li>
+                    <h5 class="cursive bold  pb-2">&#10148; Separate batch for academic syllabus and
+                        competitive syllabus.</h5>
+                </li>
+                <li>
+                    <h5 class="cursive bold  pb-2">&#10148; Excellent quality of notes and modules.</h5>
+                </li>
+                <li>
+                    <h5 class="cursive bold  pb-2">&#10148; Exam answer sheet designed as per boards
+                        examination and competitive examination.</h5>
+                </li>
+                <li>
+                    <h5 class="cursive bold  pb-2">&#10148; Doubt class for each subject.</h5>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <h2 class="text-center bold bottom-border  mb-3">Director's Desk</h2>
+        <div class="row">
+
+            <div class="col-md-4 flex-align mt-3 "><img src="https://i.ibb.co/xzpFBTB/1691397011888-01.jpg"
+                    alt="Founder's Photo" class="img-fluid " style="width: 90%; height: 90%;">
+            </div>
+            <div class="col-md-8 mt-5">
+                <h3 class="bold  centertxt">Mr. Rupesh Shrivastava  </h3><h4 style="color: grey;" class=" centertxt bold">(Founder and
+                        Director)</h4>
+               
+                <h5 class="cursive bold mt-5 ">The career of student are influenced by three guidance force, their own
+                    effort, the effort of their parents and teachers. Credible classes setup for aspiring students by
+                    Mr. Rupesh Shrivastava.</h5>
+                <h5 class="cursive bold mt-1 ">  He taught and directed over 1000 students with teaching experience of 7+ years. His vision is to build confidence and character in aspirants and students, specially for those who prepare for competitive exam
+                    in pre-foundation batches at an early age. Many students get benefit from his motivation and excellent way of teaching.
+    <br>
+                    He nurtures many young minds and build a system for both prodigy students and feeble students to success in their life.</h5>
+          
+            </div>
+        </div>
+        <div class="row"></div>
+    </div>
+
+
+
+    <div style="height:5vh"></div>
+
+
+
+
+
+
+    <script src="scripts/admin.js"></script>
+    <script src="scripts/loginapi.js">
+
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/index.js">
+    </script>
+    <script src="https://kit.fontawesome.com/0a54405ea9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="scripts/Login.js"></script>
+</body>
+
+</html>
